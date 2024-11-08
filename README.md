@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Car Manager 🚗💼
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A streamlined, responsive, and fully functional Car Management application built in just 2 hours! This project leverages **React** and **Redux Toolkit** to provide a robust state management solution, allowing users to add, search, list, and remove cars. Ideal for demonstrating my skills in Redux and React, and my ability to create a full application with clean architecture in a short amount of time.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Project Overview
 
-### `npm start`
+This project was created to practice and enhance my proficiency with Redux Toolkit. The application demonstrates essential CRUD operations with a seamless state management approach.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- **Add Car**: Input a car name and its cost, then add it to the list with a simple form submission.
+- **Search Filter**: Filter through your car list by name, enabling quick access to specific entries.
+- **Remove Car**: Delete any car from the list with ease.
+- **Total Cost Calculation**: Displays the total cost of all listed cars, updating dynamically with the list changes.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Technologies Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **React**: For building UI components and managing component-level state.
+- **Redux Toolkit**: For efficient and scalable global state management.
+- **Redux Slice API**: To create `carsSlice` and `formSlice` with reducer logic to handle car data and form input.
+- **CSS (Bulma)**: Bulma is used for a quick and responsive layout.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Folder Structure
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```plaintext
+.
+├── components
+│   ├── CarForm.js        # Form component for adding new cars
+│   ├── CarList.js        # Lists all added cars with delete functionality
+│   ├── CarSearch.js      # Search bar to filter cars by name
+│   └── CarValue.js       # Displays the total cost of listed cars
+├── store
+│   ├── index.js          # Redux store configuration
+│   ├── slices
+│   │   ├── carsSlice.js  # Slice to manage cars data
+│   │   └── formSlice.js  # Slice to manage form input
+├── App.js                # Main application component
+└── index.js              # Entry point to the app
+```
