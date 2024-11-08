@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/redux-car-manager/static/css/main.ff6d5fec.css",
+    "main.js": "/redux-car-manager/static/js/main.bb29850c.js",
+    "index.html": "/redux-car-manager/index.html",
+    "main.ff6d5fec.css.map": "/redux-car-manager/static/css/main.ff6d5fec.css.map",
+    "main.bb29850c.js.map": "/redux-car-manager/static/js/main.bb29850c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff6d5fec.css",
+    "static/js/main.bb29850c.js"
+  ]
+}
